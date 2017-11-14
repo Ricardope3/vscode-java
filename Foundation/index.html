@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script>
+
+    </script>
+
+  </head>
+  <body>  
+<div class="grid-x">
+  <div class="small-6 cell">6 cells</div>
+  <div class="small-6 cell">6 cells</div> 
+</div>
+<p id = "otro" >parte    </p>
+<p  id = "este" >Este men   </p>
+<script src = "js/vendor/jquery.js"> </script>
+<script src = "js/app.js"> </script>
+<script>
+//variable = document.getElementById("otro");
+/*
+variable2 = document.getElementById("este");
+console.log(variable2);
+variable.innerHTML += "kpdo";
+*/
+$.ajax({
+url: "https:api.openaq.org/v1/countries",
+succes: function(result){
+  console.log(result.results[0].name);
+}
+});
+</script>
+
+
+  </body>
+
+</html>
